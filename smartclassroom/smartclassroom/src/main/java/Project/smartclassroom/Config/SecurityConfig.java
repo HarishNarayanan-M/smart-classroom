@@ -45,8 +45,7 @@ public class SecurityConfig {
                         .requestMatchers(
                                 org.springframework.http.HttpMethod.GET,
                                 "/uploads/lectures/**",
-                                "/uploads/materials/**",
-                                "/uploads/submissions/**"
+                                "/uploads/materials/**"
                         ).permitAll()
 
                         .anyRequest().authenticated()
@@ -63,7 +62,10 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:5173"));
+                List.of(
+                        "http://localhost:5173",
+                        "https://harishnarayanan-m.github.io"
+                ));
 
         configuration.setAllowedMethods(
                 List.of("GET", "POST", "PUT", "PATCH",
