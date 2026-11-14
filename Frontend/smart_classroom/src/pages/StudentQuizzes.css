@@ -1,0 +1,118 @@
+
+.student-quizzes {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.student-quizzes-header {
+  margin-bottom: 24px;
+}
+
+.student-quizzes-header h2 {
+  margin-bottom: 8px;
+}
+
+.student-quizzes-header p,
+.student-quiz-card p {
+  color: #64748b;
+}
+
+.student-quiz-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.student-quiz-card,
+.student-question-card,
+.student-quiz-empty,
+.student-quiz-result {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.student-quiz-card h3,
+.student-question-card h4 {
+  margin-top: 0;
+}
+
+.student-quiz-card button,
+.student-quiz-submit,
+.student-quiz-result button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.student-quiz-card button:hover,
+.student-quiz-submit:hover,
+.student-quiz-result button:hover {
+  background: #1d4ed8;
+}
+
+.student-quiz-taking {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.student-quiz-back {
+  align-self: flex-start;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.student-question-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.student-question-options label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.student-question-options label:has(input:checked) {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.student-question-options input {
+  margin-top: 4px;
+}
+
+.student-quiz-submit {
+  align-self: flex-start;
+}
+
+.student-quiz-submit:disabled,
+.student-quiz-back:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.student-quiz-error {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.student-quiz-result {
+  margin-top: 20px;
+}

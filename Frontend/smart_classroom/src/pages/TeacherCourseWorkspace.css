@@ -1,0 +1,173 @@
+/* Course workspace styling — follows the existing Smart Classroom dashboard theme. */
+.td-course-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 0;
+}
+
+.td-course-workspace .td-page-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 26px;
+  background: #ffffff;
+  border: 1px solid #e7edf5;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(30, 64, 120, 0.045);
+}
+
+.td-course-workspace .td-page-intro h2 {
+  margin: 7px 0 8px;
+  color: #172b4d;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.td-course-workspace .td-page-intro p {
+  margin: 0;
+  color: #68778d;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.td-course-workspace .td-page-intro .td-outline-button {
+  flex: 0 0 auto;
+  min-height: 42px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #dbe5f2;
+  background: #fff;
+  color: #315ca8;
+  font-weight: 650;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.td-course-workspace .td-page-intro .td-outline-button:hover {
+  background: #f3f7ff;
+  border-color: #b9ccef;
+  transform: translateY(-1px);
+}
+
+.td-workspace-hint {
+  margin: 0;
+  color: #68778d;
+  font-size: 0.94rem;
+}
+
+.td-course-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.td-course-tool {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 208px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 23px 24px;
+  border: 1px solid #e5ebf4;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #172b4d;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: 0 5px 18px rgba(30, 64, 120, 0.035);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.td-course-tool:hover {
+  transform: translateY(-3px);
+  border-color: #c8d8f3;
+  background: linear-gradient(145deg, #ffffff 65%, #f7f9ff 100%);
+  box-shadow: 0 12px 28px rgba(36, 74, 140, 0.09);
+}
+
+.td-course-tool:focus-visible {
+  outline: 3px solid rgba(67, 111, 214, 0.3);
+  outline-offset: 3px;
+}
+
+.td-course-tool-icon {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+  border-radius: 13px;
+  background: #eef3ff;
+  color: #4569c7;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.td-course-tool:nth-child(2) .td-course-tool-icon {
+  background: #fff4e8;
+  color: #bd6b20;
+}
+
+.td-course-tool:nth-child(3) .td-course-tool-icon {
+  background: #eaf8f0;
+  color: #21865a;
+}
+
+.td-course-tool:nth-child(4) .td-course-tool-icon {
+  background: #f2edff;
+  color: #7752bd;
+}
+
+.td-course-tool h3 {
+  margin: 0 0 8px;
+  color: #1d2e4a;
+  font-size: 1.08rem;
+  font-weight: 730;
+  letter-spacing: -0.015em;
+}
+
+.td-course-tool p {
+  margin: 0 0 20px;
+  color: #6b788c;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.td-course-tool-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  color: #3d63b5;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.td-course-tool:hover .td-course-tool-link {
+  color: #244b9d;
+}
+
+@media (max-width: 760px) {
+  .td-course-workspace .td-page-intro {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .td-course-tools-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .td-course-tool {
+    min-height: 185px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+# Frontend dependencies and build
+**/node_modules/
+**/dist/
+
+# Backend build
+**/target/
+
+# Uploaded files
+**/uploads/
+
+# Secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# IDE settings
+.idea/
+.vscode/
