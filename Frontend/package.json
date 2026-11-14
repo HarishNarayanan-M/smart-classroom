@@ -1,5 +1,20 @@
+
 {
+  "name": "smart-classroom-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@jitsi/react-sdk": "^1.4.4"
-  }
+    "@jitsi/react-sdk": "^1.4.4",
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {}
 }
